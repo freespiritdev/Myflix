@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myflix</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<footer id="footer" align="center"> 
+  <%= link_to "Home", root_path %> |
+  <%= link_to "TV Shows", shows_path %>|
+  <%= link_to "Movies", movies_path %> |
+  <%= link_to "Music", tunes_path %> |
+  <%= link_to "About", about_path %> 
+  <br>
+  <em>
+    Copyright &copy; 2015 CBS VI 360
+  </em>
+</footer>
+
+</body>
+</html>

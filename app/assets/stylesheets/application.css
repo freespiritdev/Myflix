@@ -1,11 +1,51 @@
 html,
 body {
-  background: #000A00;
+  background: #000000;
   margin:0;
   padding:0;
   height:100%;
   color: #FFFFFF;
 }
+
+a {
+  color: #ffffff;
+  }
+
+.main-nav ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-align:right;
+  line-height:1em
+  }
+
+.main-nav ul li {
+  text-align:right;
+  display:inline-block;
+  margin:0 0 0 15px
+  }
+.main-nav ul li a {
+  color:#fff
+  }
+
+.main-nav ul li a span {
+  font-family:"Source Sans Pro",
+  sans-serif;
+  letter-spacing:4px;
+  font-family:"proxima-nova";
+  font-size:.80em;
+  text-transform:uppercase;
+  text-decoration:none;
+  letter-spacing:2px;
+  font-weight:350;
+  font-style:normal;
+  line-height:2em
+  }
+  .main-nav ul li a:hover,
+  .main-nav ul li a:focus {
+    color:rgba(0,255,255,5) !important
+  }
+
 
 #footer {
   width:100%;
@@ -14,4 +54,7 @@ body {
   bottom:0;
   left:0;
   background:#000000;
+  color:rgba(0,255,255,5);
 }
+ 
+

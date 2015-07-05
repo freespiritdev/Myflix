@@ -24,3 +24,4 @@ group :development, :test do
 end
 
 gem 'devise'
+gem 'simple_form', '~> 3.1.0'

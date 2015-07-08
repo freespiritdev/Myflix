@@ -25,3 +25,4 @@ end
 
 gem 'devise'
 gem 'simple_form', '~> 3.1.0'
+gem 'paperclip'

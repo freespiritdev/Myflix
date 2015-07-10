@@ -6,8 +6,10 @@
     <%= f.text_field :released %>
     <%= f.label :director %>
     <%= f.text_field :director %>
-    <%= f.label :image%> 
-    <%= f.text_field :image %>   
+    <%= f.text_field :title %>
+    <%= f.label :image %> 
+    <%= f.text_field :image %> 
+    <%= f.file_field :image %><br>
     <%= f.submit "Add Movie", class: 'btn btn-info' %>
   </div><br>
  <% end %>

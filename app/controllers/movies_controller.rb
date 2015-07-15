@@ -12,12 +12,12 @@ class MoviesController < ApplicationController
     @movie = Movie.new
   end
 
-   def create
-    @movie = Movie.new
+  def create
+    @movie = Movie.new(movie_params)
     @movie.title = params[:title]
     @movie.director = params[:director]
     @movie.released = params[:released]
-    
+
     if @movie.save
       redirect_to @movie, notice: 'Movie Added!'
     else
@@ -31,6 +31,7 @@ class MoviesController < ApplicationController
 
   def update
     @movie = Movie.find(params[:id])
+
     if @movie.update(movie_params)
       redirect_to @movie, notice: 'Movie successfully updated.'
     else

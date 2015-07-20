@@ -11,7 +11,7 @@ a {
   color: #ffffff;
   }
 
-h1 {
+h1, h3 {
   text-align: center;
   color: #FFFFFF;
 }
@@ -22,16 +22,16 @@ h1 {
   list-style:none;
   text-align:right;
   line-height:1em
-  }
+}
 
 .main-nav ul li {
   text-align:right;
   display:inline-block;
   margin:0 0 0 15px
-  }
+}
 .main-nav ul li a {
   color:#fff
-  }
+}
 
 .main-nav ul li a span {
   font-family:"Source Sans Pro",
@@ -45,7 +45,7 @@ h1 {
   font-weight:350;
   font-style:normal;
   line-height:2em
-  }
+}
   .main-nav ul li a:hover,
   .main-nav ul li a:focus {
     color:rgba(0,255,255,5) !important

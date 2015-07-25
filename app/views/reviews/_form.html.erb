@@ -1,0 +1,18 @@
+<h1>Review for <%= @movie.title %></h1>
+
+<%= hidden_field_tag :movie_id, @movie.id %>
+
+  <div>
+    <%= label_tag :title %><br />
+    <%= text_field_tag :title %>
+  </div>
+
+  <div>
+    <%= label_tag :comment %><br />
+    <%= text_area_tag :comment %>
+  </div>
+  
+  <div>
+    <%= submit_tag "Create Review" %>
+  </div>
+

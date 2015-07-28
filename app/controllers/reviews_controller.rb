@@ -27,6 +27,11 @@ class ReviewsController < ApplicationController
     @review.update(review_params)
   end
 
+  def destroy
+    @review.destroy
+    redirect_to root_path
+  end
+
   private
     
     def set_movie
